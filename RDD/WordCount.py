@@ -6,7 +6,7 @@ if __name__ == '__main__':
     sc = SparkContext(conf=conf)
 
     # 1. 读取文件，构建rdd
-    file_rdd = sc.textFile("./RDD/data/words.txt")
+    file_rdd = sc.textFile("./RDD/data/input/words.txt")
 
     # 2. 通过flatMap取出所有的单词
     word_rdd = file_rdd.flatMap(lambda line: line.split(" "))
