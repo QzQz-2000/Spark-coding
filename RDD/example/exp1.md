@@ -1,1 +1,1 @@
-![案例描述](./images/exp1.png)
+![案例描述](../images/exp1.png)
